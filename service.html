@@ -1,0 +1,152 @@
+<!-- FontAwesome CDN link -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<section class="services" id="services">
+  <div class="container">
+    <h2 class="section-title">Our Services</h2>
+    <p class="section-subtitle">Delivering quality construction & building solutions with innovation</p>
+
+    <div class="service-grid">
+      
+      <!-- Service 1 -->
+      <div class="service-card card1">
+        <div class="icon"><i class="fas fa-home"></i></div>
+        <h3>Residential Construction</h3>
+        <p>We build modern and durable homes with high-quality materials and innovative design.</p>
+        <a href="#" class="btn">Read More</a>
+      </div>
+
+      <!-- Service 2 -->
+      <div class="service-card card2">
+        <div class="icon"><i class="fas fa-city"></i></div>
+        <h3>Commercial Projects</h3>
+        <p>From offices to shopping complexes, we construct commercial spaces that inspire growth.</p>
+        <a href="#" class="btn">Read More</a>
+      </div>
+
+      <!-- Service 3 -->
+      <div class="service-card card3">
+        <div class="icon"><i class="fas fa-tools"></i></div>
+        <h3>Renovation & Remodeling</h3>
+        <p>Transform your old spaces into modern, functional, and stylish environments.</p>
+        <a href="#" class="btn">Read More</a>
+      </div>
+
+      <!-- Service 4 -->
+      <div class="service-card card4">
+        <div class="icon"><i class="fas fa-drafting-compass"></i></div>
+        <h3>Architecture & Design</h3>
+        <p>Our expert architects craft innovative designs tailored to your unique vision.</p>
+        <a href="#" class="btn">Read More</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<style>
+/* Section background */
+.services {
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #ffecd2, #fcb69f);
+  text-align: center;
+}
+
+/* Title */
+.section-title {
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 10px;
+  animation: fadeInDown 1s ease-in-out;
+}
+
+.section-subtitle {
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 50px;
+  animation: fadeIn 2s ease-in-out;
+}
+
+/* Grid */
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+/* Cards */
+.service-card {
+  padding: 30px 20px;
+  border-radius: 20px;
+  color: white;
+  text-align: center;
+  transition: 0.4s ease-in-out;
+  transform: translateY(50px);
+  opacity: 0;
+  animation: slideUp 1s forwards;
+}
+
+.service-card .icon {
+  font-size: 45px;
+  margin-bottom: 15px;
+}
+
+.service-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+/* Different colors for each card */
+.card1 { background: linear-gradient(135deg, #667eea, #764ba2); animation-delay: 0.2s; }
+.card2 { background: linear-gradient(135deg, #f7971e, #ffd200); animation-delay: 0.4s; }
+.card3 { background: linear-gradient(135deg, #00b09b, #96c93d); animation-delay: 0.6s; }
+.card4 { background: linear-gradient(135deg, #fc6076, #ff9a44); animation-delay: 0.8s; }
+
+/* Hover Effect */
+.service-card:hover {
+  transform: scale(1.05) translateY(-10px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+}
+
+/* Read More Button */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: white;
+  color: #333;
+  font-weight: bold;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #333;
+  color: white;
+  box-shadow: 0 0 15px rgba(255,255,255,0.8);
+}
+
+/* Animations */
+@keyframes slideUp {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+</style>
